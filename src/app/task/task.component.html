@@ -12,6 +12,10 @@
   </div>
   <div class="card-body bg-primary text-white">
     <p>{{ task.description }}</p>
+    <!-- pipes are used to convert/format data easily in a template -->
+    <p>Due Date: {{ task.date | date }}</p>
+    <!-- we can use a colon after a pipe to pass additional parameters to formatting -->
+    <p>Time: {{ task.time | date : "mediumTime" }}</p>
     <p>{{ task.priority_level }}</p>
   </div>
 </div>

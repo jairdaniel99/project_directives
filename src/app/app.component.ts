@@ -10,5 +10,6 @@ export class AppComponent {
   photo = {
     url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png',
     alt: 'Angular Logo',
+    width: 200,
   };
 }
